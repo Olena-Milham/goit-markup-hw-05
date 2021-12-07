@@ -883,7 +883,7 @@ img {
 }
 .modal-form {
   width: 448px;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -891,9 +891,12 @@ img {
 .form-field {
   display: flex;
   flex-direction: column;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   margin-bottom: 10px;
   position: relative;
+}
+.form-field:last-child {
+  margin-bottom: 0;
 }
 
 /* --------reset the styles --------- */
@@ -923,7 +926,7 @@ img {
 
   transform: translateY(25%);
 
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   transition: fill 250ms var(--timing-function);
 }
 
@@ -937,7 +940,7 @@ img {
 .form-field:focus-within > .modal-form-input-icon {
   fill: var(--main-accent-color);
 }
-.form-field:focus-within > .modal-input {
+.form-field:focus-within > .modal-form-input {
   border: 2px solid var(--main-accent-color);
   outline: none;
 }
@@ -956,7 +959,7 @@ textarea {
 
 /* ---------------------custom checkbox-------------------- */
 .form-checkbox {
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
   display: flex;
   width: 423px;
   align-items: center;
@@ -992,6 +995,7 @@ textarea {
 .form-checkbox-input:checked + .form-checkbox-icon {
   background-color: var(--second-button-color);
   background-image: url(../images/decore/checked.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   background-origin: border-box;
   border: 2px solid var(--second-button-color);
